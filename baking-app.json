@@ -1,0 +1,118 @@
+// user model
+// GET /user/1
+{
+	"name": "Enrique Acevedo",
+	"username": "ek1770",
+	"id": 1,
+	"log-time": "15:38:12 04/15/2013",
+	"recipes": [
+		{
+			"name": "Banana Bread",
+			"id": 234
+		}
+	]
+}
+
+
+// recipes model
+// GET /recipe/234
+{
+	"name": "Banana Bread",
+	"id": 234,
+	"notes": "Bake at 350-400 degrees. Pimp out with chocolate chips",
+	"description": "Best banana bread ever",
+	"photo-id": 1,
+
+	"proportions": [
+		{
+			"name": "Baking flour",
+			"id": 15,
+			"created": "15:38:12 04/12/2013",
+			"amount": 2 {
+				"type": "weight",
+				"weight": "lbs",
+			},
+			"cost": 4,
+			
+		},
+		{
+			"name": "Sugar",
+			"id": 16,
+			"created": "15:38:12 04/12/2013",
+			"amount": 1 {
+				"type": "weight",
+				"weight": "lbs",
+			},
+			"cost": 5,
+			
+		}
+
+		{
+			"name": "Sugar",
+			"id": 19,
+			"created": "15:38:12 04/12/2013",
+			"amount": 2 {
+				"type": "weight",
+				"weight": "lbs",
+			},
+			"cost": 2,
+			
+		}
+
+		{
+			"name": "Bananas",
+			"id": 24,
+			"created": "15:38:12 04/12/2013",
+			"amount": 3 {
+				"type": "weight",
+				"weight": "lbs",
+			},
+			"cost": 1,
+			
+		}
+
+	]
+}
+
+// ingredient model
+// GET /ingredients
+[
+	{
+		"name": "Baking flour",
+		"id": 15
+	},
+	{
+		"name": "Cheese flour",
+		"id": 16
+	},
+	{
+		"name": "Almond flour",
+		"id": 17
+	}
+
+]
+
+// ingredient model
+// GET /ingredients/16
+{
+	"name": "Cheese flour",
+	"id": 16
+}
+
+
+
+
+// ingredients: {
+// 	"name": ["Baking flour", "Sugar", "Banana", "Milk"],
+// 	"ingredients-id": [15, 19, 34, 45],
+// 	"created": "15:38:12 04/12/2013",
+// 	"amount": 2 {
+// 		"type": ["weight"],
+// 		"weight": ["lbs"],
+// 	},
+// 	"cost": 4,
+
+
+
+
+
