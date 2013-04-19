@@ -85,9 +85,6 @@ body {
 }
 
 /*heading tags */
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Great Vibes', cursive, arial, sans-serif;
-}
 
 .logo {
 	color: white;
@@ -97,39 +94,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 70px;
+	font-family: 'Pacifico', cursive;
+	font-weight: lighter;
 }
 
 h2 {
-	font-size: 40px;
-	font-family: 'Merriweather Sans', sans-serif;
-	font-weight: bolder;
+	font-size: 50px;
 }
 
 h3 {
-	font-size: 32px;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 40px;
+	font-weight: lighter;
 }
 
 h4 {
-	font-size: 26px;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+	font-weight: bolder;
 }
 
 h5 {
-	font-size: 20px;
-	font-family: 'Merriweather Sans', sans-serif;
-}
-
-h6 {
-	font-size: 18px;
-	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 26px;
+	font-weight: bold;
 }
 
 /*widths, margins, padding, etc. */
 .width {
 	width: 980px;
 	margin: auto;
+	padding: 10px 10px;
 }
 
 .title-wrapper {
@@ -187,11 +180,16 @@ button {
 	border: 1px solid #f9f5eb;
 	border-radius: 6px;
 	box-shadow: inset 1px 1px 0px 0px rgb(197, 197, 197);
-	text-shadow: 0px 1px 1px rgb(36, 36, 36);
+	text-shadow: 0px 1px 1px rgb(63, 63, 63);
 }
 
-button:hover {
-	background-color: #254a5d;
+.btn-action:hover {
+	/*background: linear-gradient(to bottom, rgba(118,199,165,1.0) 50%,rgba(118,199,165,0.8) 100%);*/
+	box-shadow: inset 0px 0px 2px 1px rgb(150, 150, 150);
+}
+
+.btn-action-alt:hover {
+	box-shadow: inset 0px 0px 2px 1px rgb(150, 150, 150);	
 }
 
 .btn-action {
@@ -199,23 +197,23 @@ button:hover {
 	width: 180px;
 	font-size: 16px;
 	color: white;
-	background: linear-gradient(to bottom, rgba(118,199,165,1.0) 50%,rgba(118,199,165,0.8) 100%);
+	background-color: #76c7a5;
 
 }
 
 .btn-inactive {
 	height: 50px;
-	width: 180px;
+	padding: 0 10px;
 	font-size: 16px;
 	color: rgb(105, 105, 105);
 	background: linear-gradient(to bottom, #f9f5eb 50%,#f9f5eb 100%);
-	background-opacity: 0%;
+	text-shadow: none;
 
 }
 
 .btn-action-alt {
-	height: 30px;
-	width: 126px;
+	height: 40px;
+	padding: 0 15px;
 	font-size: 12px;
 	color: white;
 	background: linear-gradient(to bottom, rgba(118,199,165,1.0) 50%,rgba(118,199,165,0.8) 100%);
@@ -223,11 +221,12 @@ button:hover {
 }
 
 .btn-inactive-alt {
-	height: 30px;
-	width: 126px;
+	height: 40px;
+	padding: 0 15px;
 	color: rgb(105, 105, 105);
 	background: linear-gradient(to bottom, #f9f5eb 50%,#f9f5eb 100%);
 	background-opacity: 50%;
+	text-shadow: none;
 
 }
 
